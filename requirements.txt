@@ -1,0 +1,3 @@
+spacy
+cv2
+pytesseract
