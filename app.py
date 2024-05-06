@@ -22,6 +22,7 @@ uploaded_file = st.file_uploader("Choose a file", type=["jpg", "png", "jpeg"])
 if st.button("Extract Text"):
     if uploaded_file is not None:
         extract_text = text_extraction_from_image(uploaded_file)
+        st.header("Extracted Text:"
         st.write(extract_text)
 
 
