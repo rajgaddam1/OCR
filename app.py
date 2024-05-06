@@ -11,7 +11,7 @@ from PIL import Image
 
 import warnings
 warnings.filterwarnings("ignore")
-st.header("Name Identification in text", anchor=None)
+st.header("OCR Model Extract text from images", anchor=None)
 
 def contains_name(text):
     """
