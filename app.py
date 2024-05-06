@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 st.header("OCR Model Extract text from images", anchor=None)
 
 # Set the path to Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+#pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 
 def text_extraction_from_image(image_uploaded):
     img = Image.open(image_uploaded)
