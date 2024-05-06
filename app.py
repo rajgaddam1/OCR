@@ -15,10 +15,9 @@ def text_extraction_from_image(image_uploaded):
     extract_text = pytesseract.image_to_string(img)
     return extract_text
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Choose a file", type=["jpg", "png", "jpeg"])
 if uploaded_file is not None:
-    image_name = uploaded_file.name
-    extract_text = text_extraction_from_image(image_name)
+    extract_text = text_extraction_from_image(uploaded_file)
     st.write(extract_text)
 
 
