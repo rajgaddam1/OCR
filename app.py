@@ -19,6 +19,8 @@ def text_extraction_from_image(image_uploaded):
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
+    stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+    st.write(stringio)
     extract_text = text_extraction_from_image(uploaded_file)
     st.write(extract_text)
 
