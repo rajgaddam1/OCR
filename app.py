@@ -11,8 +11,8 @@ warnings.filterwarnings("ignore")
 st.header("OCR Model Extract text from images", anchor=None)
 
 def text_extraction_from_image(image_uploaded):
-    image = cv2.imread(f'{image_uploaded}')
-    extract_text = pytesseract.image_to_string(image)
+    img = Image.open(image_uploaded)
+    extract_text = pytesseract.image_to_string(img)
     return extract_text
 
 uploaded_file = st.file_uploader("Choose a file")
