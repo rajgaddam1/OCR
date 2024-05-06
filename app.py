@@ -19,9 +19,11 @@ def text_extraction_from_image(image_uploaded):
     return extract_text
 
 uploaded_file = st.file_uploader("Choose a file", type=["jpg", "png", "jpeg"])
-if uploaded_file is not None:
-    extract_text = text_extraction_from_image(uploaded_file)
-    st.write(extract_text)
+st.button("Extract Text", type="primary")
+if st.button("Say hello"):
+    if uploaded_file is not None:
+        extract_text = text_extraction_from_image(uploaded_file)
+        st.write(extract_text)
 
 
         
