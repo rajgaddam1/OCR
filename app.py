@@ -30,6 +30,9 @@ with col2:
     if st.button("Display Image"):
         st.image(uploaded_file, caption='Uploaded Image')
 
-        
+
+#####these are the changes
+############
+#######  
   
     
